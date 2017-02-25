@@ -31,4 +31,4 @@ app.use(flash());
 
 
 require('./app/routes.js')(app,passport);
-app.listen(port);
+app.listen(3000);
