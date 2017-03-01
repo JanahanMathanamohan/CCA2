@@ -1,8 +1,7 @@
-
 /**
 * Janahan Mathanamohan
-* YelpSearch.js
-* This JS file contains the methods for LookAtList.html
+* routes.js
+* This Contains all the routes for the backend and provides a link to the frontend
 */
 var lat;
 var long;
@@ -32,7 +31,7 @@ $(document).ready(function(){
     var update = [];
     var results;
     gLocation();
-    // Functionaility for the submit button. Collects search info and sends it to the yelp search route
+    // Functionaility for the submit button. Collects search info and sends it to the server
     $("#submit").click(function(){
         var toSend = {
             message: $("#message").val(),

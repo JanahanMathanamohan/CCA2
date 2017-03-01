@@ -1,6 +1,6 @@
 /**
 * Janahan Mathanamohan
-* models.js
+* database.js
 * This File contains the structure for the database
 */
 var mongoose = require("mongoose");

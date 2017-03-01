@@ -1,6 +1,8 @@
-// server.js
-// Janahan Mathanamohan
-// ``
+/**
+* Janahan Mathanamohan
+* server.js
+* This Contains all the setup for the server
+*/
 
 var express = require('express');
 var app = express();

@@ -1,4 +1,8 @@
-
+/**
+* Janahan Mathanamohan
+* map.js
+* This Contains all the js to the map file.
+*/
 var map;
 var marker = [];
 var infowindow = [];
@@ -42,6 +46,9 @@ function initMap() {
     },"json");
 }
 
+/**
+*  Creates all the markers with the users locations
+**/
 function createMarkers(messages){
     var location, panel, tmp, clearbit;
     for(var x = 0; x < messages.length; x++){
