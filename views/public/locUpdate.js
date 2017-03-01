@@ -24,6 +24,8 @@ function gLocation() {
 function sPosition(position){
     lat= position.coords.latitude;
     long= position.coords.longitude;
+    console.log(lat);
+    console.log(long);
 }
 
 $(document).ready(function(){

@@ -77,7 +77,7 @@ module.exports = function(app, passport){
         var clearbit = require('clearbit')('sk_445cdef63c8b0d69ab26a93903537de8');
         clearbit.Enrichment.find({email: req.body.email, stream: true}).then(function (response) {
             locations.picture = response.person.avatar;
-            locations.clearbit = response;
+            locations.clearbit = response.person;
             locations.save(function(err) {
                 if (err)
                     res.json({message:"fail", error:true});
