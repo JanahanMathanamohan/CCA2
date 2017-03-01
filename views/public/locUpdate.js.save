@@ -38,11 +38,11 @@ $(document).ready(function(){
             long: long
         };
         console.log(toSend);
-        $.post("/insert",toSend,function(data,status){
+        $.post("http://localhost:8080/insert",toSend,function(data,status){
             if(status == "success"){
                 if(data.error){
                     alert(data.message.data)
-                }else{
+http://ec2-35-167-112-44.us-west-2.compute.amazonaws.com/u                }else{
                     window.location.href = "/main";
                 }
             }

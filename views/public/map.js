@@ -33,7 +33,7 @@ function initMap() {
         center: uluru
     });
         console.log("hi");
-    $.get("http://localhost:8080/location",function(data,status){
+    $.get("/location",function(data,status){
         if(status == "success"){
             createMarkers(data.message);
         }else{
